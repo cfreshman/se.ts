@@ -1,0 +1,27 @@
+{
+  "name": "se.ts",
+  "version": "0.0.1",
+  "description": "set functions",
+  "repository": "https://github.com/cfreshman/se.ts",
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "20.8.2",
+    "gts": "^5.2.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [".test.ts"]
+  }
+}

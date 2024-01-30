@@ -1,0 +1,7 @@
+{
+  "extends": "./node_modules/gts/",
+  "rules": {
+    "semi": 0,
+    "prettier/prettier": 0
+  }
+}
